@@ -1,0 +1,58 @@
+.ticker-container {
+    width: 100%; /* Full width of the container */
+    max-width: 1150px; /* Optional: set a maximum width for the ticker */
+    overflow: hidden;
+    position: relative; /* Relative positioning to allow for pseudo-elements */
+    background-color: black;
+    padding: 10px 10px;
+    margin-top: 35px; 
+    margin-inline: auto; }
+  
+  .ticker {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    animation: ticker 30s linear infinite;
+  }
+  
+  .ticker-item {
+    display: inline-block;
+    padding: 0 70px;
+  }
+  
+  .ticker-logo {
+    height: 40px; /* Adjust the size of the SVG logos */
+    width: auto;
+    fill: white; /* Ensure SVG logos are white on a dark background */
+  }
+  
+  /* Fading effect */
+  .ticker-container::before,
+  .ticker-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 50px;
+    pointer-events: none;
+    background: linear-gradient(to right, black, transparent);
+    z-index: 2;
+  }
+  
+  .ticker-container::after {
+    right: 0;
+    transform: rotate(180deg);
+  }
+  
+  .ticker-container::before {
+    left: 0;
+  }
+  
+  @keyframes ticker {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-70%);
+    }
+  }

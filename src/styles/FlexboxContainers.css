@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+.flexbox-container {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap onto the next row */
+    width: 52rem;
+    height: 480px;
+    margin: 0 auto; /* Center horizontally */
+    padding: 0 78px; /* 78px distance from both ends */
+    background-color: #000000; /* Optional background color for the container */
+    gap: 20px; /* Space between the boxes */
+  }
+  
+  .flexbox-item {
+    flex: 1 1 calc(50% - 10px); /* Keep your original settings */
+    height: calc(50% - 10px); /* Keep your original settings */
+    background-color: #121212; /* Optional background color for individual containers */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 8px; /* Optional border radius */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation on hover */
+  }
+
+  .item-content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+  
+  .company-logo {
+    width: 120px; /* Adjust the logo size as needed */
+    height: auto;
+  }
+  
+  .company-details {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .company-details h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 4.5px;
+
+  }
+  
+  .company-details p {
+    font-size: 12px;
+    margin: 0;
+    color: #a8a3a3;
+  }
+  
+  .flexbox-item:hover {
+    transform: translateY(-10px); /* Elevate the container */
+    box-shadow: 0 10px 20px rgba(203, 107, 224, 0.595); /* Add shadow for a lifted effect */
+  }
+  
