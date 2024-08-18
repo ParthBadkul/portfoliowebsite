@@ -173,16 +173,20 @@ padding: 0;
   display: flex;
   justify-content: center;
   position: relative;
-  left: 3.2rem;
+  left: 1.1rem;
   z-index: 3;
-  letter-spacing: 10px;
+  letter-spacing: 6px;
   font-size: medium;
   font-weight: 600;
   margin-bottom: 60px;
 }
 
+.tickerContainer{
+  padding-inline: 40px;
+}
+
 .experience{
-  margin-left: 8.0rem;
+  margin-left: 4.0rem;
   margin-top: 4rem;
   display: flex;
   justify-content: center;
@@ -204,43 +208,226 @@ padding: 0;
 
 
 @media (max-width: 1199px) {
-  .grid-container {
-    grid-template-columns: 1fr; /* Single column layout */
-    height: auto; /* Adjust height for vertical layout */
+  body {
+    font-family: 'Inter', sans-serif;
+    height: 400px;
+    overflow-x: hidden;
   }
   
-  .flexcol {
+  
+  .bigContainer{
+  
+    position: relative;
+  
+  }
+  .grid-container {
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Two equal columns */
+    width: auto;
+    height: 650px;
+    gap: 10px; /* Optional gap between columns */
+    margin: 0 auto; /* Center the grid horizontally */
+    background-color: black;
+    padding: 50px;
+  }
+  
+  .grid-item {
+    
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    border-radius: 8px; /* Optional border radius */
+  }
+  .first-column  {
+    position: relative;
+    margin-top: 8rem;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    align-items: start;
+     /* border: 0.1px solid #ddd;   */
+    padding: 10px;
+    margin: 10px 0;
+    z-index: 1;
+  }
+  
+  .flexcol{ 
+    position: absolute;
+    /* padding-inline: 10rem; */
+    display: flex;
+    flex-direction: column;
+  
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  
+  
+  }
+  
+  .secon-column{
+  
+    position: relative;
+  
+  
+  }
+  
+  .robot{
+  
+    position: absolute;
+    top: initial;
+    left: -2rem;
+    bottom: 4rem;
+    z-index: 0;
+  }
+  
+  
+  
+  /* Custom heights for each row */
+  
+  .f1{
+  
+    width: 500px;
+    margin-left: -10px;
+  
+  
+  }
+  .title{
+    
+  
+  padding: 0;
+    font-size: 5rem;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    letter-spacing: 1.7px;
+  
+  }
+  
+  .f2{
+    margin-top: 30px;
+    width: 500px;
+  }
+  .subheading{
+  
+   
+  
+    color: rgb(197, 192, 192);
+    letter-spacing: 1.2px;
+    font-size: x-small;
+    
+  
+  
+  }
+  
+  .f3{
+    margin-top: 40px;
+    width: 500px;
+  }
+  
+  
+  .learn-more-button {
+    
+  
+  
+    background-color: #9f46ed; /* Purple background */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding around the text */
+    border: none; /* Remove default border */
+    border-radius: 10px; /* Rounded corners */
+    font-family: 'Inter', sans-serif; /* Use 'Inter' font */
+    font-size: 16px; /* Font size */
+    font-weight: 500; /* Font weight */
+    display: inline-flex; /* Align text and icon */
+    align-items: center; /* Center align text and icon */
+    cursor: pointer; /* Pointer cursor on hover */
+    text-decoration: none; /* Remove underline from links */
+  }
+  
+  .learn-more-button:hover {
+    background-color: #6A1AB3; /* Slightly darker purple on hover */
+  }
+  
+  .learn-more-button svg {
+    margin-left: 10px; /* Space between text and arrow */
+    transition: transform 0.2s; /* Smooth transition */
+  }
+  
+  .learn-more-button:hover svg {
+    transform: translateX(5px); /* Move arrow on hover */
+  }
+  
+  .f4{
+    margin-top: 50px;
+    margin-left: 1px;
+    width: 500px;
+  }
+  .date-display {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: #898585;
+   
+    letter-spacing: 0.1px;
+  }
+  
+  
+  /* Background for the Spline container */
+  .grid-item:nth-child(2) {
+    background-color: transparent; /* Make the second column's background transparent */
+  }
+  
+  
+  .techstuff{
+   
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 3.2rem;
+    z-index: 3;
+    letter-spacing: 10px;
+    font-size: medium;
+    font-weight: 600;
+    margin-bottom: 60px;
+  }
+
+  .tickerContainer{
+    padding-inline: 100px;
+  }
+  
+  .experience{
+    margin-left: 4.0rem;
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
     align-items: center;
   }
   
-  .first-column, .second-column {
-    margin-top: 2rem;
-    padding: 0;
+  .exptext{
+  
+    letter-spacing: 1.4rem;
+    font-size: 20px;
+    font-weight: 500;
+  
   }
-
-  .f1, .f2, .f3, .f4 {
-    width: 90%; /* Adjusted for smaller screens */
-    margin: 0 auto;
+  .fcon{
+    position: relative;
+    top:  5rem;
+    left: 3.5rem;
   }
 }
 
 /* Media Query for Mobile Devices (Max Width: 810px) */
-@media (max-width: 810px) {
-  .grid-container {
-    grid-template-columns: 1fr; /* Single column layout */
-    height: auto;
+@media (max-width: 1130px) {
+
+  .bigContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
   }
 
-  .f1, .f2, .f3, .f4 {
-    width: 100%; /* Full width */
-    margin: 50px auto;
-  }
-  
-  .title {
-    font-size: 2.5rem;
-  }
-  
-  .subheading {
-    font-size: 0.8rem;
-  }
+
+
 }
