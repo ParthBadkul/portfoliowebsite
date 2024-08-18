@@ -9,7 +9,7 @@ import FlutterLogo from "../assets/flutter-logo.svg";
 import HtmlLogo from "../assets/html-5-logo.svg";
 import NodeLogo from "../assets/nodejs-logo.svg";
 import SqlLogo from "../assets/sql-logo.svg";
-import SplineLogog from "../assets/spline-logo1.png";
+import SplineLogog from "../assets/spline.svg";
 import FramerLogog from "../assets/framer-svgrepo-com.svg";
 
 const logos = [

@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/FlexboxContainers.css";
-import PepsiLogo from "../assets/pepsi-20330.png";
-import SynergyLogo from "../assets/synergy.png";
+import PepsiLogo from "../assets/pepsi-20330.svg";
+import SynergyLogo from "../assets/synergy.svg";
 import GamePointLogo from "../assets/gamepoint.svg";
 import SafeoutsLogo from "../assets/safeouts.svg";
 
