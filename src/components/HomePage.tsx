@@ -37,7 +37,7 @@ const HomePage = () => {
                   href="https://www.linkedin.com/in/parth-badkul-35b62b217/"
                   className="learn-more-button"
                 >
-                  Learn More
+                  Lets Connect
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"

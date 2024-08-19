@@ -21,9 +21,13 @@ body{
 
 }
 
-.robot{
+.robotmob{
 
     position: relative;
     
+
+}
+.ticker{
+    width: 100%;
 
 }

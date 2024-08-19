@@ -121,10 +121,10 @@ padding: 0;
   
 
 
-  background-color: #9f46ed; /* Purple background */
-  color: white; /* White text */
+  background-color: #000000; /* Purple background */
+  color: #6A1AB3; /* White text */
   padding: 10px 20px; /* Padding around the text */
-  border: none; /* Remove default border */
+  border: 0.1px solid #6A1AB3;/* Remove default border */
   border-radius: 10px; /* Rounded corners */
   font-family: 'Inter', sans-serif; /* Use 'Inter' font */
   font-size: 16px; /* Font size */
@@ -136,6 +136,7 @@ padding: 0;
 }
 
 .learn-more-button:hover {
+  color: white;
   background-color: #6A1AB3; /* Slightly darker purple on hover */
 }
 
