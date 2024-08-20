@@ -136,6 +136,8 @@ padding: 0;
 }
 
 .learn-more-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(205, 155, 216, 0.595);
   color: white;
   background-color: #6A1AB3; /* Slightly darker purple on hover */
 }
@@ -214,4 +216,13 @@ padding: 0;
 
 }
 
+@media (max-width:810) {
+  
+  .date-display {
+    font-family: 'Inter', sans-serif;
+    font-size: 2px;
+    color: #898585;
+    letter-spacing: 0.1px;
+  }
 
+}

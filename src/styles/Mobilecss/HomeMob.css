@@ -1,23 +1,17 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-body{
-
-    margin: 0;
-    padding: 0;
-    color: white;
-    background-color: rgb(55, 55, 55);
-    font-family: 'Inter', sans-serif;
 
 
-}
 
 .screen{
+    padding-inline: 2rem;
     margin-top: 2%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
+    overflow-x: hidden;
 
 }
 
@@ -27,23 +21,42 @@ body{
     width: 100%;
     top: 5px;
     /* align-self: baseline; */
-    justify-content: space-between;
-    gap: 4rem;
+    justify-content: space-around;
+    
+    gap: 2rem;
     z-index: 4;
+    max-height: 20px;
+ 
     
 
 }
 
-.c2{
+.c1{
+    box-sizing: border-box;
+    display: flex;
+    align-items: start;
     
+
+}
+.dmob{
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    color: #898585;
+   
+    letter-spacing: 0.1px;
+}
+
+.c2{
+    left: 10px;
+    position: relative;
     font-weight: 500;
     font-size: 20px;
-    margin-left: 136px;
     letter-spacing: 2.2px;
 
 }
 
 .c3{
+    flex-wrap: wrap;
     display: flex;
     gap: 20px;
     background-color: rgb(0, 0, 0);
@@ -61,6 +74,7 @@ body{
 }
 
 .icon1:hover{
+    background-color: transparent;
 
     transform: translateY(-2px);
     box-shadow: 0 10px 20px rgba(203, 107, 224, 0.595);
@@ -68,21 +82,21 @@ body{
 
 }
 .icon2:hover{
-
+    background-color: transparent;
     transform: translateY(-2px);
     box-shadow: 0 10px 20px rgba(203, 107, 224, 0.595);
 
 
 }
 .icon3:hover{
-
+    background-color: transparent;
     transform: translateY(-2px);
     box-shadow: 0 10px 20px rgba(203, 107, 224, 0.595);
 
 
 }
 .icon4:hover{
-
+    background-color: transparent;
     transform: translateY(-2px);
     box-shadow: 0 10px 20px rgba(203, 107, 224, 0.595);
 
@@ -95,13 +109,31 @@ body{
     object-fit: contain;
   }
 
-.robotmob{
-
+  .robotmob{
     position: relative;
-    
+    left: 0.5%;
+    height: 20px;
+
+  }
+
+
+.subheadingmob{
+
+    color: rgb(197, 192, 192);
+    letter-spacing: 1.2px;
+    font-size: x-small;
+    width: 80%;
+    margin-left: 3rem;
+    margin-bottom: 3rem;
+    margin-top: -8rem;
+    z-index: 4;
+
 
 }
-.ticker{
+
+.tickermob{
+    padding-inline: 20%;
+    margin-top: -60px;
     width: 100%;
 
 }
