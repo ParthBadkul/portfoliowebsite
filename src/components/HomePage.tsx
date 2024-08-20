@@ -11,6 +11,7 @@ const HomePage = () => {
   useEffect(() => {
     AOS.init();
   }, []);
+
   return (
     <>
       <div className="bigContainer">
@@ -60,29 +61,33 @@ const HomePage = () => {
           </div>
           <div data-aos="fade-up-left" className="grid-item secon-column">
             <Spline
+              onClick={() => {
+                window.open("https://github.com/ParthBadkul");
+              }}
               className="robot"
               scene="https://prod.spline.design/tgmljp9bwWyIGs5P/scene.splinecode"
             />
           </div>
         </div>
       </div>
-
-      <div data-aos="fade-up" className="techstuff">
-        TECH STUFF
-      </div>
-
-      <div className="tickerContainer">
-        <Ticker />
-      </div>
-
-      <div data-aos="fade-up" className="experience">
-        <div data-aos="fade-up" className="exptext">
-          EXPERIENCE
+      <div className="flextwo">
+        <div data-aos="fade-up" className="techstuff">
+          TECH STUFF
         </div>
-      </div>
 
-      <div data-aos="fade-up" className="fcon">
-        <FlexboxContainers />
+        <div className="tickerContainer">
+          <Ticker />
+        </div>
+
+        <div data-aos="fade-up" className="experience">
+          <div data-aos="fade-up" className="exptext">
+            EXPERIENCE
+          </div>
+        </div>
+
+        <div data-aos="fade-up" className="fcon">
+          <FlexboxContainers />
+        </div>
       </div>
     </>
   );
