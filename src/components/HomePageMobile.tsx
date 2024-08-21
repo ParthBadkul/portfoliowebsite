@@ -71,14 +71,12 @@ const HomePageMobile = () => {
         />
 
         <div className="subheadingmob">
-          Building a user interface is more than just designing beautiful
-          visuals; it’s about shaping an experience that feels natural,
-          captivating, and unforgettable. By merging technical expertise with
-          artistic vision, a well-executed UI draws users in and leads them
-          smoothly through every interaction. As a full-stack developer and
-          animator focused on aesthetics, I strive to balance creativity with
-          functionality, ensuring each element contributes to a cohesive and
-          fluid digital journey
+          I am a full-stack developer and animator focused on aesthetics. I
+          blend creativity with functionality, ensuring that each element of my
+          work contributes to a cohesive and fluid digital experience. By paying
+          attention to both design and technical detail, I create visually
+          engaging interfaces that are intuitive and efficient, offering users
+          an immersive and seamless journey across digital platforms.
         </div>
 
         <div data-aos="fade-up" className="techstuff mob">

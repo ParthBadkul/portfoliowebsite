@@ -6,6 +6,11 @@ import FlexboxContainers from "./FlexboxContainer";
 import "aos/dist/aos.css";
 import AOS from "aos";
 import { useEffect } from "react";
+import FigmaLogo from "../assets/navbar assets/figma.svg";
+import GithubLogo from "../assets/navbar assets/github.svg";
+import LinkedInLogo from "../assets/navbar assets/linkedin.svg";
+import InstagramLogo from "../assets/navbar assets/insta.svg";
+import Projects from "./Projects";
 
 const HomePage = () => {
   useEffect(() => {
@@ -14,6 +19,46 @@ const HomePage = () => {
 
   return (
     <>
+      <div className="navbarPc1">
+        <div className="icon1">
+          <img
+            src={FigmaLogo}
+            alt="Figma"
+            onClick={() => {
+              window.open("https://www.framer.community/u/b85ad1c2");
+            }}
+          />
+        </div>
+        <div className="icon2">
+          <img
+            src={GithubLogo}
+            alt="GitHub"
+            onClick={() => {
+              window.open("https://github.com/ParthBadkul");
+            }}
+          />
+        </div>
+        <div className="icon3">
+          <img
+            src={LinkedInLogo}
+            alt="LinkedIn"
+            onClick={() => {
+              window.open(
+                "https://www.linkedin.com/in/parth-badkul-35b62b217/"
+              );
+            }}
+          />
+        </div>
+        <div className="icon4">
+          <img
+            src={InstagramLogo}
+            onClick={() => {
+              window.open("https://www.instagram.com/badkulparth/");
+            }}
+            alt="Instagram"
+          />
+        </div>
+      </div>
       <div className="bigContainer">
         <div className="grid-container">
           <div className="grid-item first-column">
@@ -23,17 +68,16 @@ const HomePage = () => {
               </div>
               <div className="f2">
                 <div data-aos="fade-right" className="subheading">
-                  Building a user interface is more than just designing
-                  beautiful visuals; it’s about shaping an experience that feels
-                  natural, captivating, and unforgettable. By merging technical
-                  expertise with artistic vision, a well-executed UI draws users
-                  in and leads them smoothly through every interaction. As a
-                  full-stack developer and animator focused on aesthetics, I
-                  strive to balance creativity with functionality, ensuring each
-                  element contributes to a cohesive and fluid digital journey
+                  I am a full-stack developer and animator focused on
+                  aesthetics. I blend creativity with functionality, ensuring
+                  that each element of my work contributes to a cohesive and
+                  fluid digital experience. By paying attention to both design
+                  and technical detail, I create visually engaging interfaces
+                  that are intuitive and efficient, offering users an immersive
+                  and seamless journey across digital platforms.
                 </div>
               </div>
-              <div data-aos="fade-right" className="f3">
+              <div className="f3">
                 <a
                   href="https://www.linkedin.com/in/parth-badkul-35b62b217/"
                   className="learn-more-button"
@@ -87,6 +131,16 @@ const HomePage = () => {
 
         <div data-aos="fade-up" className="fcon">
           <FlexboxContainers />
+        </div>
+
+        <div data-aos="fade-up" className="experience pro">
+          <div data-aos="fade-up" className="exptext">
+            Projects
+          </div>
+        </div>
+
+        <div data-aos="fade-down" className="fpro">
+          <Projects />
         </div>
       </div>
     </>
