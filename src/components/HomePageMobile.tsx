@@ -6,10 +6,10 @@ import FigmaLogo from "../assets/navbar assets/figma.svg";
 import GithubLogo from "../assets/navbar assets/github.svg";
 import LinkedInLogo from "../assets/navbar assets/linkedin.svg";
 import InstagramLogo from "../assets/navbar assets/insta.svg";
-import DateDisplay from "./DateDisplay";
 import { useEffect } from "react";
 import AOS from "aos";
 import Datemob from "./Datemob";
+import Flexboxmob from "./Flexboxmob";
 
 const HomePageMobile = () => {
   useEffect(() => {
@@ -25,16 +25,42 @@ const HomePageMobile = () => {
           <div className="c2">Parth Badkul</div>
           <div className="c3">
             <div className="icon1">
-              <img src={FigmaLogo} alt="Figma" />
+              <img
+                src={FigmaLogo}
+                alt="Figma"
+                onClick={() => {
+                  window.open("https://www.framer.community/u/b85ad1c2");
+                }}
+              />
             </div>
             <div className="icon2">
-              <img src={GithubLogo} alt="GitHub" />
+              <img
+                src={GithubLogo}
+                alt="GitHub"
+                onClick={() => {
+                  window.open("https://github.com/ParthBadkul");
+                }}
+              />
             </div>
             <div className="icon3">
-              <img src={LinkedInLogo} alt="LinkedIn" />
+              <img
+                src={LinkedInLogo}
+                alt="LinkedIn"
+                onClick={() => {
+                  window.open(
+                    "https://www.linkedin.com/in/parth-badkul-35b62b217/"
+                  );
+                }}
+              />
             </div>
             <div className="icon4">
-              <img src={InstagramLogo} alt="Instagram" />
+              <img
+                src={InstagramLogo}
+                onClick={() => {
+                  window.open("https://www.instagram.com/badkulparth/");
+                }}
+                alt="Instagram"
+              />
             </div>
           </div>
         </div>
@@ -61,11 +87,12 @@ const HomePageMobile = () => {
         <div className="tickermob">
           <Ticker />
         </div>
-        <div
-          style={{
-            height: "500px",
-          }}
-        ></div>
+        <div data-aos="fade-up" className="exptext-mob">
+          EXPERIENCE
+        </div>
+        <div data-aos="fade-down" style={{ marginTop: "30px" }}>
+          <Flexboxmob />
+        </div>
       </div>
     </>
   );

@@ -138,4 +138,16 @@
 
 }
 
+.exptext-mob{
+    display: flex;
+    align-items: center;
+    margin-left: 34px;
+    letter-spacing: 1.4rem;
+    font-size: 20px;
+    font-weight: 500;
+    
+}
+
+
+
 
