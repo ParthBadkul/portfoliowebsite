@@ -10,6 +10,7 @@ import { useEffect } from "react";
 import AOS from "aos";
 import Datemob from "./Datemob";
 import Flexboxmob from "./Flexboxmob";
+import Projmoj from "./Projmoj";
 
 const HomePageMobile = () => {
   useEffect(() => {
@@ -90,6 +91,10 @@ const HomePageMobile = () => {
         </div>
         <div data-aos="fade-down" style={{ marginTop: "30px" }}>
           <Flexboxmob />
+        </div>
+        <div className="exptext-mob">Projects</div>
+        <div data-aos="fade-down" style={{ marginTop: "30px" }}>
+          <Projmoj />
         </div>
       </div>
     </>

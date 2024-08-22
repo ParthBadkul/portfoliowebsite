@@ -79,6 +79,5 @@ padding: 0;
 .proItem:hover{
     border-radius: 8px;
     transform: translateY(-1px); /* Elevate the container */
-    cursor: pointer;
     box-shadow: 0 5px 10px rgba(95, 58, 103, 0.579); /* Add shadow for a lifted effect */
 }
