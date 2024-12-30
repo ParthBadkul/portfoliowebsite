@@ -105,9 +105,6 @@ const HomePage = () => {
           </div>
           <div data-aos="fade-up-left" className="grid-item secon-column">
             <Spline
-              onClick={() => {
-                window.open("https://app.spline.design/@badkul191");
-              }}
               className="robot"
               scene="https://prod.spline.design/tgmljp9bwWyIGs5P/scene.splinecode"
             />

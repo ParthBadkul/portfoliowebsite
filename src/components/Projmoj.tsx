@@ -1,11 +1,11 @@
 import "../styles/Mobilecss/Flexmob.css";
-import SocialWallLogo from "../assets/Projects assets/pp.png";
-import FashoffLogo from "../assets/Projects assets/fashoff.png";
-import GGLogo from "../assets/Projects assets/gg.png";
+import SocialWallLogo from "../assets/Projects assets/cell-phone-svgrepo-com (1).svg";
+import FashoffLogo from "../assets/Projects assets/HEY.svg";
+import GGLogo from "../assets/Projects assets/firebase.svg";
 const Projmoj = () => {
   return (
     <div className="flexbox-container-mob">
-      <div className="flexbox-item-mob">
+      <div className="flexbox-item-mob-projmoj">
         <div
           onClick={() => {
             window.open("https://github.com/ParthBadkul/social_wall");
@@ -31,7 +31,7 @@ const Projmoj = () => {
         onClick={() => {
           window.open("https://github.com/ParthBadkul/fash0ff");
         }}
-        className="flexbox-item"
+        className="flexbox-item-mob-projmoj"
       >
         <div className="item-content1">
           <img src={FashoffLogo} alt="Pepsi Logo" className="company-logo" />
@@ -50,7 +50,7 @@ const Projmoj = () => {
           </div>
         </div>
       </div>
-      <div className="flexbox-item">
+      <div className="flexbox-item-mob-projmoj">
         {" "}
         <div
           onClick={() => {

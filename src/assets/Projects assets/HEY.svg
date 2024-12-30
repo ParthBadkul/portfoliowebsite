@@ -1,0 +1,23 @@
+<svg width="800" height="800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Define a gradient from warm white to purple -->
+    <linearGradient id="warmWhiteToPurple" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color: #FFFF00; stop-opacity: 1" /> <!-- Warm white -->
+      <stop offset="100%" style="stop-color: #8e44ad; stop-opacity: 1" /> <!-- Purple -->
+    </linearGradient>
+  </defs>
+  
+  <style>
+    .brand-text {
+      font-family: 'Helvetica', sans-serif;
+      font-weight: bold;
+      font-size: 200px;
+      letter-spacing: -5px;
+      fill: url(#warmWhiteToPurple); /* Apply the gradient */
+      text-anchor: middle;
+      alignment-baseline: central;
+    }
+  </style>
+  
+  <text x="400" y="400" class="brand-text">FASHoff</text>
+</svg>

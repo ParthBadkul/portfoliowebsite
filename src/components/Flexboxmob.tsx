@@ -18,7 +18,7 @@ const Flexboxmob = () => {
           </div>
         </div>
       </div>
-      <div className="flexbox-item">
+      <div className="flexbox-item-mob">
         {" "}
         <div className="item-content">
           <img src={SynergyLogo} alt="Pepsi Logo" className="company-logo" />
@@ -29,7 +29,7 @@ const Flexboxmob = () => {
           </div>
         </div>
       </div>
-      <div className="flexbox-item">
+      <div className="flexbox-item-mob">
         {" "}
         <div className="item-content">
           <img src={GamePointLogo} alt="Pepsi Logo" className="company-logo" />
@@ -40,7 +40,7 @@ const Flexboxmob = () => {
           </div>
         </div>
       </div>
-      <div className="flexbox-item">
+      <div className="flexbox-item-mob">
         {" "}
         <div className="item-content">
           <img src={SafeoutsLogo} alt="Pepsi Logo" className="company-logo" />

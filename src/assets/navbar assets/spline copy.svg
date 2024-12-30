@@ -1,0 +1,58 @@
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     width="100%" viewBox="0 0 2000 2000" enable-background="new 0 0 2000 2000" xml:space="preserve">
+  <!-- Main container outline -->
+  <path fill="none" 
+        stroke="#000000" 
+        stroke-width="2"
+        stroke-linejoin="round"
+        d="M2001.000000,495.000000 
+        C2001.000000,997.333313 2001.000000,1499.166626 2001.000000,2001.000000 
+        C1334.333374,2001.000000 667.666687,2001.000000 1.000000,2001.000000 
+        C1.000000,1334.333374 1.000000,667.666687 1.000000,1.000000 
+        C667.666687,1.000000 1334.333374,1.000000 2001.000000,1.000000 
+        C2001.000000,165.500000 2001.000000,330.000000 2001.000000,495.000000"/>
+
+  <!-- Main wave pattern -->
+  <path fill="none" 
+        stroke="#3DCCDC" 
+        stroke-width="1.5"
+        stroke-linejoin="round"
+        d="M1096.900635,54.341614 
+        C1097.750000,54.002102 1098.500000,54.001335 1099.625000,54.000591 
+        // ... rest of the wave pattern ..."/>
+
+  <!-- Decorative elements -->
+  <path fill="none" 
+        stroke="#FF9569" 
+        stroke-width="1"
+        stroke-linejoin="round"
+        d="M682.171265,123.848404 
+        C681.956055,123.506035 681.976318,123.065392 682.025757,122.294022 
+        C682.172119,122.558907 682.289368,123.154518 682.171265,123.848404"/>
+
+  <path fill="none" 
+        stroke="#FF7A95" 
+        stroke-width="1"
+        stroke-linejoin="round"
+        d="M664.748901,146.031860 
+        C664.824646,146.555298 664.629517,147.088989 664.210815,147.806717 
+        C663.986328,147.816971 663.985474,147.643173 663.973694,146.993912 
+        C663.962769,146.518448 663.937866,146.086716 663.937866,146.086716 
+        C664.117920,146.071838 664.297974,146.056976 664.748901,146.031860"/>
+
+  <!-- Additional decorative paths -->
+  <path fill="none" 
+        stroke="#3CCEDA" 
+        stroke-width="1.5"
+        stroke-linejoin="round"
+        d="M1089.629639,56.060326 
+        C1089.212891,56.751007 1088.552734,57.778030 1087.618164,58.205540 
+        // ... rest of the decorative pattern ..."/>
+
+  <!-- Continue with all other paths, using the same pattern:
+       - fill="none"
+       - stroke matching original fill color
+       - appropriate stroke-width
+       - stroke-linejoin="round"
+  -->
+</svg>

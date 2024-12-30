@@ -1,7 +1,7 @@
 import "../styles/Projects.css";
-import SocialWallLogo from "../assets/Projects assets/pp.png";
-import FashoffLogo from "../assets/Projects assets/fashoff.png";
-import GGLogo from "../assets/Projects assets/gg.png";
+import SocialWallLogo from "../assets/Projects assets/cell-phone-svgrepo-com (1).svg";
+import FashoffLogo from "../assets/Projects assets/HEY.svg";
+import GGLogo from "../assets/Projects assets/firebase.svg";
 const Projects = () => {
   return (
     <div className="proflex">
