@@ -63,7 +63,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .mobile-nav-right img {
@@ -74,11 +74,68 @@
 
 .mobile-nav-right a:hover {
   transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(203, 107, 224, 0.595);
 }
 
-/* Remove old navbar styles */
+/* Media query for smaller mobile screens */
+@media screen and (max-width: 380px) {
+  .mobile-nav-right {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    padding: 0 4px;
+  }
+
+  .mobile-nav-center h1 {
+    font-size: 16px;
+    letter-spacing: 1.5px;
+  }
+
+  .mobile-navbar {
+    padding: 8px 12px;
+  }
+}
+
+/* Reset any conflicting desktop styles */
 .navbar, .c1, .c2, .c3 {
   display: none;
+}
+
+/* Restore desktop icon styles */
+.icon1,
+.icon2,
+.icon3,
+.icon4 {
+  width: 20px !important;
+  height: 20px !important;
+}
+
+@media screen and (min-width: 1000px) {
+  .mobile-navbar {
+    display: none;
+  }
+  
+  .navbar {
+    display: flex;
+  }
+  
+  .icon1,
+  .icon2,
+  .icon3,
+  .icon4 {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+  }
+
+  .icon1:hover,
+  .icon2:hover,
+  .icon3:hover,
+  .icon4:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(203, 107, 224, 0.595);
+  }
 }
 
 .robotmob{
@@ -215,6 +272,8 @@
   opacity: 1;
   transform: scale(1);
 }
+
+
 
 /* Add media query for smaller screens */
 @media screen and (max-width: 380px) {
