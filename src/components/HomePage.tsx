@@ -24,6 +24,7 @@ import i9 from "../assets/pictures/9.jpeg";
 import i10 from "../assets/pictures/10.jpeg";
 
 import BentoGrid from "./BentoGrid";
+import Footer from "./Footer";
 
 const HomePage = () => {
   useEffect(() => {
@@ -158,10 +159,10 @@ const HomePage = () => {
         <div
           data-aos="fade-up"
           className="experience"
-          style={{ marginTop: "200px" }}
+          style={{ paddingBottom: "50px" }}
         >
           <div data-aos="fade-up" className="exptext">
-            JATT BUDDHI
+            Life Frames
           </div>
         </div>
 
@@ -169,6 +170,7 @@ const HomePage = () => {
 
         <div className="gradient-line"></div>
       </div>
+      <Footer />
     </>
   );
 };
