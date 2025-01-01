@@ -12,10 +12,25 @@ import LinkedInLogo from "../assets/navbar assets/linkedin.svg";
 import InstagramLogo from "../assets/navbar assets/insta.svg";
 import Projects from "./Projects";
 
+import i from "../assets/pictures/1.jpeg";
+import i2 from "../assets/pictures/2.jpeg";
+import i3 from "../assets/pictures/11.jpeg";
+import i4 from "../assets/pictures/4.jpeg";
+import i5 from "../assets/pictures/5.jpeg";
+import i6 from "../assets/pictures/6.jpeg";
+import i7 from "../assets/pictures/7.jpeg";
+import i8 from "../assets/pictures/8.jpeg";
+import i9 from "../assets/pictures/9.jpeg";
+import i10 from "../assets/pictures/10.jpeg";
+
+import BentoGrid from "./BentoGrid";
+
 const HomePage = () => {
   useEffect(() => {
     AOS.init();
   }, []);
+
+  const galleryImages = [i, i2, i3, i4, i5, i6, i7, i8, i9, i10];
 
   return (
     <>
@@ -139,6 +154,20 @@ const HomePage = () => {
         <div data-aos="fade-down" className="fpro">
           <Projects />
         </div>
+
+        <div
+          data-aos="fade-up"
+          className="experience"
+          style={{ marginTop: "200px" }}
+        >
+          <div data-aos="fade-up" className="exptext">
+            JATT BUDDHI
+          </div>
+        </div>
+
+        <BentoGrid images={galleryImages} />
+
+        <div className="gradient-line"></div>
       </div>
     </>
   );
