@@ -9,9 +9,23 @@
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr auto 1fr;
   gap: 2rem;
   padding: 0 2rem;
+  align-items: center;
+}
+
+.footer-center {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lazy-cat-animation {
+  width: 100%;
+  height: 100%;
 }
 
 /* Left Column Styles */
@@ -68,23 +82,58 @@
 
 .email-section {
   cursor: pointer;
-  transition: transform 0.3s ease;
-}
-
-.email-section:hover {
-  transform: translateY(-5px);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1rem 1.5rem;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .email-title {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   color: rgba(255, 255, 255, 0.7);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.8rem;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+.email-field {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 0.6rem 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.email-icon {
+  width: 18px;
+  height: 18px;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .email-address {
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: white;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+.email-section:hover .email-field {
+  background: rgba(203, 107, 224, 0.1);
+  border-color: rgba(203, 107, 224, 0.3);
+  transform: translateY(-5px);
+}
+
+.email-section:hover {
+  box-shadow: 0 10px 20px rgba(203, 107, 224, 0.595);
 }
 
 .email-address.hovered {
@@ -114,6 +163,7 @@
 @media (max-width: 768px) {
   .footer-content {
     grid-template-columns: 1fr;
+    gap: 0;
   }
 
   .footer-quote {
@@ -122,5 +172,85 @@
 
   .email-address {
     font-size: 1.25rem;
+  }
+
+  .footer-center {
+    width: 250px;
+    height: 250px;
+    margin: 1rem auto;
+  }
+}
+
+.social-section {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-title {
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.social-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.social-grid a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+  transition: all 0.3s ease;
+  padding: 0.5rem 1rem;
+  justify-content: center;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.social-grid img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.social-grid span {
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.social-grid a:hover {
+  transform: translateY(-5px);
+  color: #cb6be0;
+  background: rgba(203, 107, 224, 0.1);
+  border-color: rgba(203, 107, 224, 0.3);
+  box-shadow: 0 10px 20px rgba(203, 107, 224, 0.595);
+}
+
+@media screen and (max-width: 768px) {
+  .social-grid {
+    gap: 0.8rem;
+  }
+  
+  .social-grid a {
+    padding: 0.4rem;
+  }
+  
+  .social-grid img {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .social-grid span {
+    font-size: 0.8rem;
   }
 } 

@@ -5,41 +5,53 @@ interface BentoGridProps {
 }
 
 const BentoGridMobile = ({ images }: BentoGridProps) => {
-  const [currentImage, setCurrentImage] = useState<string>("");
+  const [frameImages, setFrameImages] = useState<string[]>([]);
   const [isTransitioning, setIsTransitioning] = useState(false);
 
-  const changeImage = () => {
+  const getRandomImages = () => {
+    // Get 4 random images for the 4 frames
+    return Array(4)
+      .fill(null)
+      .map(() => {
+        const randomIndex = Math.floor(Math.random() * images.length);
+        return images[randomIndex];
+      });
+  };
+
+  const changeImages = () => {
     setIsTransitioning(true);
     setTimeout(() => {
-      const randomImage = images[Math.floor(Math.random() * images.length)];
-      setCurrentImage(randomImage);
+      const newImages = getRandomImages();
+      setFrameImages(newImages);
       setIsTransitioning(false);
     }, 800);
   };
 
   useEffect(() => {
     if (images.length > 0) {
-      setCurrentImage(images[0]);
-      const interval = setInterval(changeImage, 7000);
+      changeImages();
+      const interval = setInterval(changeImages, 7000);
       return () => clearInterval(interval);
     }
   }, [images]);
 
   return (
-    <div className="single-frame-mobile">
-      {currentImage && (
-        <div className="frame-container" data-aos="fade-up">
-          <img
-            src={currentImage}
-            alt="Gallery item"
-            loading="lazy"
-            className={`frame-image ${
-              isTransitioning ? "fade-out" : "fade-in"
-            }`}
-          />
+    <>
+      {frameImages.map((image, index) => (
+        <div key={index} className="single-frame-mobile">
+          <div className="frame-container" data-aos="fade-up">
+            <img
+              src={image}
+              alt={`Gallery item ${index + 1}`}
+              loading="lazy"
+              className={`frame-image ${
+                isTransitioning ? "fade-out" : "fade-in"
+              }`}
+            />
+          </div>
         </div>
-      )}
-    </div>
+      ))}
+    </>
   );
 };
 
