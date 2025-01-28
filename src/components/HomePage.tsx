@@ -22,6 +22,9 @@ import i7 from "../assets/pictures/7.jpeg";
 import i8 from "../assets/pictures/8.jpeg";
 import i9 from "../assets/pictures/9.jpeg";
 import i10 from "../assets/pictures/10.jpeg";
+import i11 from "../assets/pictures/11.jpeg";
+import i12 from "../assets/pictures/12.jpeg";
+import i13 from "../assets/pictures/12.jpeg";
 
 import BentoGrid from "./BentoGrid";
 import Footer from "./Footer";
@@ -31,7 +34,7 @@ const HomePage = () => {
     AOS.init();
   }, []);
 
-  const galleryImages = [i, i2, i3, i4, i5, i6, i7, i8, i9, i10];
+  const galleryImages = [i, i2, i3, i4, i5, i6, i7, i8, i9, i10, i11, i12, i13];
 
   return (
     <>

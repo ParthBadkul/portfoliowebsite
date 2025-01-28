@@ -34,7 +34,7 @@ body {
   grid-template-columns: 1fr 1fr;
   /* Two equal columns */
   width: auto;
-  height: 650px;
+  height: 500px;
   gap: 10px; /* Optional gap between columns */
   margin: 0 auto; /* Center the grid horizontally */
   background-color: black;
@@ -262,6 +262,7 @@ margin-top: 150px;
   gap: 1rem;
   padding: 2rem;
   max-width: 1200px;
+  height: 450px;
   margin: 0 auto;
 }
 

@@ -1,6 +1,5 @@
 import "../styles/Mobilecss/HomeMob.css";
 import Ticker from "./Ticker";
-
 import { useEffect } from "react";
 import AOS from "aos";
 import Flexboxmob from "./Flexboxmob";
@@ -30,12 +29,14 @@ const HomePageMobile = () => {
   useEffect(() => {
     AOS.init();
   }, []);
-  const galleryImages = [i, i2, i3, i4, i5, i6, i7, i8, i9, i10];
-  return (
-    <>
-      <div className="screen">
-        <MobileNavbar />
 
+  const galleryImages = [i, i2, i3, i4, i5, i6, i7, i8, i9, i10];
+
+  return (
+    <div className="screen">
+      <MobileNavbar />
+
+      <section className="hero-section">
         <div className="mobile-animation">
           <RobotCarousel robots={robotImages} />
         </div>
@@ -48,40 +49,43 @@ const HomePageMobile = () => {
           engaging interfaces that are intuitive and efficient, offering users
           an immersive and seamless journey across digital platforms.
         </div>
+      </section>
 
-        <div data-aos="fade-up" className="techstuff mob">
+      <section className="tech-section">
+        <h2 data-aos="fade-up" className="section-heading">
           TECH STUFF
-        </div>
+        </h2>
         <div className="tickermob">
           <Ticker />
         </div>
-        <div data-aos="fade-up" className="exptext-mob">
+      </section>
+
+      <section className="experience-section">
+        <h2 data-aos="fade-up" className="section-heading">
           EXPERIENCE
-        </div>
-        <div data-aos="fade-down" style={{ marginTop: "30px" }}>
+        </h2>
+        <div data-aos="fade-down" className="experience-content">
           <Flexboxmob />
         </div>
-        <div className="exptext-mob">Projects</div>
-        <div data-aos="fade-down" style={{ marginTop: "30px" }}>
+      </section>
+
+      <section className="projects-section">
+        <h2 className="section-heading">Projects</h2>
+        <div data-aos="fade-down" className="projects-content">
           <Projmoj />
         </div>
+      </section>
 
-        <div
-          data-aos="fade-up"
-          className="experience"
-          style={{ paddingBottom: "30px" }}
-        >
-          <div data-aos="fade-up" className="exptext-mob">
-            Life Frames
-          </div>
-        </div>
-
+      <section className="gallery-section">
+        <h2 data-aos="fade-up" className="section-heading">
+          Life Frames
+        </h2>
         <BentoGridMobile images={galleryImages} />
-        <Footer />
+      </section>
 
-        <div className="gradient-line"></div>
-      </div>
-    </>
+      <Footer />
+      <div className="gradient-line"></div>
+    </div>
   );
 };
 
